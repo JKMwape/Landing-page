@@ -1,14 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
-    text-align: center;
+    /* text-align: center; */
     font-family: sans-serif;
-    width: 75%;
-    padding: 0 10%;
+    width: 100%;
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    padding: 0 10%;
+    /* padding: 0 10%; */
 }
 
 .header{
@@ -16,6 +20,12 @@ body{
     flex-direction: column;
     background-color: #1F2937;
     padding: 0 10% 5% 10%;
+    color: #E5E7EB;
+}
+
+.header.button{
+    text-align: left;
+    width: 100px;
 }
 
 .top{
@@ -25,25 +35,37 @@ body{
     margin-bottom: 5%;
 }
 
+.top div{
+    display: flex;
+    gap: 16px;
+    font-size: 18px;
+}
+
 .bottom{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .bottom div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
+    width: 47.5%;
 }
 
-.bottom p{
+.bottom .left p{
     text-align: left;
+    margin-top: 0px;
+}
+
+.bottom .right{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
 }
 
 p, a{
     font-size: 18px;
     color: #E5E7EB;
+    text-decoration: none;
 }
 
 h1{
@@ -51,4 +73,85 @@ h1{
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
+    margin-bottom: 5px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.right-header p{
+    text-align: center;
+}
+
+/*This is for the content section*/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.content div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content div div{
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+/*This is for the review section*/
+
+.review{
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+}
+
+.review p{
+    font-size: 36px;
+    color: #1f2937;
+}
+
+#left{
+    font-style: italic;
+    padding: 7% 28.5% 0 28.5%;
+}
+
+#right{
+    font-style: normal;
+    padding: 0 30% 7% 30%;
+    text-align: right;
+}
+
+/*This is for the banner section*/
+
+.banner-box{
+    display: flex;
+    background-color: #3882f6;
+    justify-content: space-around;
+    padding: 5%;
+    margin: 5% 20%;
+    border-radius: 15px 15px 15px 15px;
+    align-items: center;
+}
+
+/*This is for the footer*/
+
+.footer{
+    background-color: #1f2937;
+    text-align: center;
+    padding: 3%;
 }
