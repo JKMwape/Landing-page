@@ -89,25 +89,38 @@ h3{
 
 /*This is for the content section*/
 
-.content{
+.c-head{
+    text-align: center;
+    margin: 5%;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+#content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding: 0 5% 5% 5%;
 }
 
-.content div{
+#content div{
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.content div div{
+#content div div{
     width: 13%;
     display: flex;
     justify-content: center;
     text-align: center;
     text-wrap: wrap;
+}
+
+#content p{
+    color: grey;
 }
 
 img{
@@ -117,13 +130,13 @@ img{
 
 /*This is for the review section*/
 
-.review{
+#review{
     display: flex;
     flex-direction: column;
     background-color: #e5e7eb;
 }
 
-.review p{
+#review p{
     font-size: 36px;
     color: #1f2937;
 }
